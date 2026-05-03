@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A Wedding Microsite Proposal — Aanya &amp; Rohan</title>
+<meta name="description" content="A wedding microsite proposal from Knot &amp; Ink for Aanya &amp; Rohan." />
+<link rel="stylesheet" href="proposal.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- =====================================================================
+     SCREEN-ONLY CONTROL BAR — hidden when printing
+     ===================================================================== -->
+<div class="control-bar no-print">
+  <div class="control-bar__inner">
+    <p>
+      <strong>To send to a couple as PDF:</strong>
+      Press <kbd>Ctrl</kbd>+<kbd>P</kbd> (or <kbd>⌘</kbd>+<kbd>P</kbd>) →
+      Destination: <em>Save as PDF</em> →
+      Paper size: <em>A4</em> →
+      Margins: <em>None</em> →
+      enable <em>Background graphics</em> →
+      Save.
+    </p>
+    <p class="control-bar__note">
+      Personalised for the demo couple <strong>Aanya &amp; Rohan</strong>.
+      Before sending to a real couple, find &amp; replace their names, wedding
+      date, location, sent date, and validity date in <code>proposal.html</code>.
+      Studio brand <strong>Knot &amp; Ink</strong> is canon across the project.
+    </p>
+  </div>
+</div>
+
+<!-- =====================================================================
+     PAGE 1 — COVER
+     ===================================================================== -->
+<section class="page page--cover">
+  <div class="cover__top">
+    <p class="cover__eyebrow">A Wedding Microsite Proposal</p>
+  </div>
+
+  <div class="cover__main">
+    <p class="cover__prep">prepared with love for</p>
+    <h1 class="cover__couple">Aanya &amp; Rohan</h1>
+    <div class="cover__divider" aria-hidden="true">
+      <span></span>
+      <svg viewBox="0 0 24 24"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="currentColor"/></svg>
+      <span></span>
+    </div>
+    <p class="cover__date">14 February 2027</p>
+    <p class="cover__location">Udaipur, Rajasthan</p>
+  </div>
+
+  <div class="cover__bottom">
+    <p class="cover__from">From <strong>Knot &amp; Ink</strong></p>
+    <p class="cover__meta">Sent 1 May 2026 · Valid until 31 May 2026</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PAGE 2 — WELCOME + WHAT IS A WEDDING MICROSITE
+     ===================================================================== -->
+<section class="page">
+
+  <header class="page__top">
+    <p class="page__eyebrow">A note from us</p>
+    <h2 class="page__heading"><em>Hello, Aanya & Rohan.</em></h2>
+  </header>
+
+  <div class="welcome">
+    <p>First — congratulations. We've been told planning a wedding can feel like running a small company for six months, except every shareholder is a relative. We hope this is the easy part of your week.</p>
+
+    <p>This proposal walks you through what a wedding microsite is, the three packages we offer, and exactly how we'd build yours. Take your time with it. If something doesn't make sense, ask us — we'd much rather have a phone call than a misunderstanding.</p>
+
+    <p class="welcome__sign">— Knot &amp; Ink</p>
+  </div>
+
+  <hr class="page__rule" />
+
+  <div class="what">
+    <h3 class="what__title">So what's a wedding microsite, really?</h3>
+    <p class="what__lede">A small, beautiful website built specifically for your wedding. One link, shared on WhatsApp, that holds everything: your story, the schedule, the RSVP form, photos, venue map, travel info — all in one place. Your guests open it on their phone in two seconds.</p>
+
+    <div class="why-grid">
+      <div class="why">
+        <div class="why__num">01</div>
+        <h4>Lives on WhatsApp</h4>
+        <p>No envelopes, no stamps, no waiting for India Post. You forward one link to your family group and the entire invite is delivered.</p>
+      </div>
+      <div class="why">
+        <div class="why__num">02</div>
+        <h4>Always up to date</h4>
+        <p>Wedding got moved by an hour? Venue changed? You don't reprint 300 cards — we update the page and your guests see the latest version next time they tap.</p>
+      </div>
+      <div class="why">
+        <div class="why__num">03</div>
+        <h4>RSVPs collect themselves</h4>
+        <p>No chasing your chacha for confirmation. Every guest fills the form once, and you see a clean spreadsheet — who's coming, dietary needs, accommodation, plus-ones.</p>
+      </div>
+      <div class="why">
+        <div class="why__num">04</div>
+        <h4>Everything in one place</h4>
+        <p>Hotel options, airport pickups, dress codes for each event, the playlist for sangeet — your guests stop asking the same questions because the answers are right there.</p>
+      </div>
+      <div class="why">
+        <div class="why__num">05</div>
+        <h4>Looks gorgeous on every phone</h4>
+        <p>Designed mobile-first because that's how 95% of your guests will see it. Your friends in Australia and your Nani in Lucknow get the same beautiful experience.</p>
+      </div>
+      <div class="why">
+        <div class="why__num">06</div>
+        <h4>Yours forever</h4>
+        <p>The site stays live for months after your wedding. Add the official photos. Send guests home with a digital memory they can revisit anytime.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page__bottom">
+    <p>1 of 5 · Welcome · Knot &amp; Ink</p>
+  </footer>
+</section>
+
+<!-- =====================================================================
+     PAGE 3 — PACKAGES (3 cards + comparison matrix)
+     ===================================================================== -->
+<section class="page">
+
+  <header class="page__top">
+    <p class="page__eyebrow">Three packages, one beautiful day</p>
+    <h2 class="page__heading"><em>Choose what feels right.</em></h2>
+  </header>
+
+  <div class="packages-grid">
+
+    <div class="ppkg">
+      <p class="ppkg__tier">Basic</p>
+      <p class="ppkg__price">₹3,000</p>
+      <p class="ppkg__sub">For intimate weddings</p>
+      <ul>
+        <li>Single-page microsite</li>
+        <li>1 template, 3 colour options</li>
+        <li>Names · date · venue · RSVP</li>
+        <li>5-photo gallery</li>
+        <li>Google Maps to your venue</li>
+        <li>1 round of edits</li>
+        <li>Live for 6 months</li>
+      </ul>
+      <p class="ppkg__delivery">Delivered in <strong>48 hours</strong></p>
+    </div>
+
+    <div class="ppkg ppkg--featured">
+      <span class="ppkg__badge">Most chosen</span>
+      <p class="ppkg__tier">Standard</p>
+      <p class="ppkg__price">₹6,000</p>
+      <p class="ppkg__sub">The complete experience</p>
+      <ul>
+        <li>1-page site, 8 sections</li>
+        <li>3 templates · custom palette</li>
+        <li>Story timeline · countdown · FAQ</li>
+        <li>25-photo gallery, full RSVP</li>
+        <li>Background music · 2 languages</li>
+        <li>2 rounds of edits</li>
+        <li>Live for 1 year</li>
+        <li><strong>Eternal Memory Mode</strong> — site becomes a wedding photo album after the date (1 photo update included)</li>
+      </ul>
+      <p class="ppkg__delivery">Delivered in <strong>4-5 days</strong></p>
+    </div>
+
+    <div class="ppkg">
+      <p class="ppkg__tier">Premium</p>
+      <p class="ppkg__price">₹10,000</p>
+      <p class="ppkg__sub">For destination & multi-event weddings</p>
+      <ul>
+        <li>Multi-page (one page per event)</li>
+        <li>Bespoke layout · unlimited photos</li>
+        <li>Advanced RSVP + guest list import</li>
+        <li>Music playlist · 3 languages</li>
+        <li>Custom <code>.com</code> domain (yr 1 free)</li>
+        <li>5 rounds of edits</li>
+        <li>Live for 2 years + thank-you cards</li>
+        <li><strong>Eternal Memory Mode</strong> — unlimited photo updates, the site grows with your family</li>
+      </ul>
+      <p class="ppkg__delivery">Delivered in <strong>7-10 days</strong></p>
+    </div>
+
+  </div>
+
+  <h3 class="matrix__title">Side-by-side comparison</h3>
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Basic</th>
+        <th class="matrix__featured">Standard</th>
+        <th>Premium</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th>Pages</th><td>1-page scroll</td><td>1 page · 8 sections</td><td>Multi-page</td></tr>
+      <tr><th>Templates</th><td>1 + 3 palettes</td><td>3 + custom palette</td><td>Bespoke</td></tr>
+      <tr><th>Photos</th><td>Up to 5</td><td>Up to 25</td><td>Unlimited</td></tr>
+      <tr><th>Story timeline</th><td>—</td><td>3-4 milestones</td><td>4-6 + graphics</td></tr>
+      <tr><th>Countdown</th><td>—</td><td>✓</td><td>✓ animated</td></tr>
+      <tr><th>RSVP fields</th><td>Basic</td><td>Full + per-event</td><td>+ CSV import · password</td></tr>
+      <tr><th>Music</th><td>—</td><td>1 track</td><td>Playlist (3-5)</td></tr>
+      <tr><th>Languages</th><td>English</td><td>+1 regional</td><td>Up to 3</td></tr>
+      <tr><th>Hosting</th><td>Subpath URL</td><td>Subdomain URL</td><td>Custom .com</td></tr>
+      <tr><th>Animations</th><td>None</td><td>Subtle fades</td><td>Intro splash · parallax</td></tr>
+      <tr><th>Lifespan</th><td>6 months</td><td>1 year (renewable)</td><td>2 years (renewable) + thank-you cards</td></tr>
+      <tr><th>Eternal Memory Mode</th><td>—</td><td>1 photo update</td><td>Unlimited photo updates</td></tr>
+      <tr><th>Edits</th><td>1 round</td><td>2 rounds</td><td>5 rounds</td></tr>
+      <tr><th>Support</th><td>Email</td><td>WhatsApp (business hrs)</td><td>Priority + video call</td></tr>
+    </tbody>
+  </table>
+
+  <footer class="page__bottom">
+    <p>2 of 5 · Packages · Knot &amp; Ink</p>
+  </footer>
+</section>
+
+<!-- =====================================================================
+     PAGE 4 — CUSTOM ILLUSTRATIONS (upsell)
+     ===================================================================== -->
+<section class="page">
+
+  <header class="page__top">
+    <p class="page__eyebrow">Make it uniquely yours · Add-on</p>
+    <h2 class="page__heading"><em>Custom illustrations</em></h2>
+  </header>
+
+  <p class="illu__lede">Most wedding sites use the same stock icons everyone else uses. We can change that. Commission a piece of art that exists nowhere else in the world — drawn for your wedding and only your wedding. It becomes the visual anchor of your microsite, your save-the-date, even your menu cards.</p>
+
+  <h3 class="illu__sub">Pick a style</h3>
+
+  <div class="illu-section">
+    <p class="illu-section__label">Couple portraits</p>
+    <div class="illu-grid">
+      <div class="illu"><h4>Watercolor</h4><p>Soft, romantic, traditional. Best for elegant or classical weddings.</p></div>
+      <div class="illu"><h4>Line-art minimalist</h4><p>Clean, modern, monochrome. Best for urban or contemporary couples.</p></div>
+      <div class="illu"><h4>Cartoon (Pixar-style)</h4><p>Playful, expressive, vibrant. Best for younger or casual couples.</p></div>
+      <div class="illu"><h4>Caricature</h4><p>Humorous, exaggerated features. Best for fun, quirky weddings.</p></div>
+      <div class="illu"><h4>Indian classical</h4><p>Madhubani · Pichwai · Kalamkari · Warli. Best for heritage-themed weddings.</p></div>
+      <div class="illu"><h4>Vintage botanical</h4><p>Couple in a hand-drawn garden setting. Best for outdoor or garden weddings.</p></div>
+    </div>
+  </div>
+
+  <div class="illu-section">
+    <p class="illu-section__label">Decorative motifs</p>
+    <div class="illu-grid illu-grid--three">
+      <div class="illu"><h4>Custom mandala</h4><p>Circular composition with elements meaningful to you (lotus, peacock, the place you met).</p></div>
+      <div class="illu"><h4>Regional pattern</h4><p>Rajasthani peacock, South Indian banana-leaf, Bengali kantha, Punjabi phulkari, Kashmiri shawl.</p></div>
+      <div class="illu"><h4>City silhouette</h4><p>Couple silhouette with iconic location backdrop — Mumbai, Bangalore, Hampi, Kerala backwaters.</p></div>
+    </div>
+  </div>
+
+  <div class="illu-section">
+    <p class="illu-section__label">Story & header art</p>
+    <div class="illu-grid">
+      <div class="illu"><h4>Hand-drawn timeline icons</h4><p>4 small custom illustrations of meaningful items from your story — the cafe, the bike, the dog, the hill where you got engaged.</p></div>
+      <div class="illu"><h4>Bespoke header art</h4><p>Large piece of custom artwork at the top of your microsite — becomes your wedding's visual identity, reusable on save-the-dates, signage, menu cards.</p></div>
+    </div>
+  </div>
+
+  <div class="illu-pricing">
+    <div class="illu-pricing__card">
+      <p class="illu-pricing__tier">Single piece</p>
+      <p class="illu-pricing__price">+₹3,000</p>
+      <p class="illu-pricing__desc">Choose any one style above</p>
+    </div>
+    <div class="illu-pricing__card illu-pricing__card--featured">
+      <p class="illu-pricing__tier">Suite of three</p>
+      <p class="illu-pricing__price">+₹7,500</p>
+      <p class="illu-pricing__desc">Couple portrait + decorative motif + timeline icons<br><strong>Save ₹1,500</strong></p>
+    </div>
+    <div class="illu-pricing__card">
+      <p class="illu-pricing__tier">Full bespoke identity</p>
+      <p class="illu-pricing__price">+₹12,000</p>
+      <p class="illu-pricing__desc">Everything custom + reusable assets for save-the-date, signage, menu, thank-you cards</p>
+    </div>
+  </div>
+
+  <p class="illu__note"><em>Illustrations add 5-7 days to delivery. We'll share rough sketches before final art so you can refine the look.</em></p>
+
+  <footer class="page__bottom">
+    <p>3 of 5 · Custom illustrations · Knot &amp; Ink</p>
+  </footer>
+</section>
+
+<!-- =====================================================================
+     PAGE 5 — INCLUDED IN EVERY PACKAGE + PROCESS + WHY US
+     ===================================================================== -->
+<section class="page">
+
+  <header class="page__top">
+    <p class="page__eyebrow">The fine print, in plain English</p>
+    <h2 class="page__heading"><em>What you can count on, no matter the package</em></h2>
+  </header>
+
+  <div class="included-grid">
+    <div class="incl"><span class="incl__check">✓</span><span><strong>Mobile-first design</strong> — beautiful on every phone, every screen size, every browser</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>Your photos, your story</strong> — never stock imagery unless you want it</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>RSVP collection</strong> — clean spreadsheet of who's coming, automatically</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>Google Maps to venue</strong> — guests get one-tap directions</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>Privacy controls</strong> — site can be public or shared only via direct link</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>WhatsApp share preview</strong> — your names + date show up beautifully when shared</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>Hosting included</strong> — no setup fees, no surprise charges</span></div>
+    <div class="incl"><span class="incl__check">✓</span><span><strong>SSL secure</strong> — green padlock, your guests' data is safe</span></div>
+  </div>
+
+  <hr class="page__rule" />
+
+  <!-- Eternal Memory Mode — flagship feature for Standard + Premium -->
+  <div class="memory">
+    <div class="memory__head">
+      <p class="memory__eyebrow">Standard &amp; Premium · Included</p>
+      <h3 class="memory__title"><em>Your wedding website doesn't end on your wedding day.</em></h3>
+    </div>
+    <div class="memory__body">
+      <p class="memory__lede">The day after your wedding, your microsite quietly transforms. The countdown disappears. The RSVP form steps aside. And in their place — a <strong>wedding photo album</strong> that lives at the same URL forever. We call it <strong>Eternal Memory Mode</strong>.</p>
+      <div class="memory__cols">
+        <div class="memory__col">
+          <h4>How it works</h4>
+          <ul>
+            <li>After the wedding, you email or WhatsApp us your favourite photos — phone shots, the photographer's edits, candid moments from family.</li>
+            <li>We sort them, optimise them for fast loading, and add them to your gallery. Your guests can revisit the site any time to look back.</li>
+            <li>Your story and event details stay on the page — guests who couldn't attend can still feel like they were there.</li>
+          </ul>
+        </div>
+        <div class="memory__col">
+          <h4>What you get</h4>
+          <ul>
+            <li><strong>Standard</strong> — one batch update of up to 50 photos included, no extra charge. Hosting renewable at ₹1,500/year after the first year.</li>
+            <li><strong>Premium</strong> — unlimited photo updates for the life of hosting. Add anniversary photos, baby announcements, family milestones — the site grows with your family.</li>
+            <li>One day, you can show your children the website where their parents got married.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="page__rule" />
+
+  <h3 class="process__title">From hello to wedding day</h3>
+
+  <div class="process">
+    <div class="process__step">
+      <div class="process__num">1</div>
+      <p class="process__when">Day 1 · Kickoff call</p>
+      <p>30-minute video call to understand your story, your aesthetic, your event details. We share template options and confirm package.</p>
+    </div>
+    <div class="process__arrow">→</div>
+    <div class="process__step">
+      <div class="process__num">2</div>
+      <p class="process__when">Day 2 · You pay 50%</p>
+      <p>Half upfront via UPI / Razorpay / bank transfer. We start design the same day. You send us your photos and event details via a simple form.</p>
+    </div>
+    <div class="process__arrow">→</div>
+    <div class="process__step">
+      <div class="process__num">3</div>
+      <p class="process__when">Day 3-7 · First draft + edits</p>
+      <p>Your microsite goes live on a private link. You review, request your edit rounds, we refine. We don't move on until you love it.</p>
+    </div>
+    <div class="process__arrow">→</div>
+    <div class="process__step">
+      <div class="process__num">4</div>
+      <p class="process__when">Final · Site goes public</p>
+      <p>You pay the remaining 50%. Site moves to your final URL. We send you a launch kit with tested WhatsApp messages you can copy-paste to your family group.</p>
+    </div>
+  </div>
+
+  <hr class="page__rule" />
+
+  <!-- TESTIMONIALS — fictional placeholders. Replace with real ones once
+       you have closed weddings. Keep the format: 1-2 sentences, specific
+       detail, named couple, city, month/year. -->
+  <div class="testimonials">
+    <h3 class="testimonials__title">From couples we've worked with</h3>
+    <div class="testimonials__grid">
+
+      <blockquote class="testimonial">
+        <p>"We sent the link to our family WhatsApp group at 11pm on a Friday. By Sunday morning we had RSVPs from 180 of our 240 guests. My mother stopped asking 'who is coming?' for the first time in three months."</p>
+        <footer><strong>Priya &amp; Karthik</strong><br>Pune wedding · March 2026</footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>"The custom mandala we ordered ended up on our save-the-date, our welcome signage at the venue, and our menu cards. One illustration, used everywhere. Our wedding finally felt like ours."</p>
+        <footer><strong>Ishaan &amp; Aditi</strong><br>Delhi-Jaipur wedding · December 2025</footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>"Family flying in from London, Singapore, and Dubai. The Travel page meant nobody messaged us asking which airport to fly into or which hotel to book. Easily the best ₹6,000 we spent on the wedding."</p>
+        <footer><strong>Rhea &amp; Aryan</strong><br>Goa destination wedding · January 2026</footer>
+      </blockquote>
+
+    </div>
+  </div>
+
+  <footer class="page__bottom">
+    <p>4 of 5 · Process & promises · Knot &amp; Ink</p>
+  </footer>
+</section>
+
+<!-- =====================================================================
+     PAGE 6 — CTA + CONTACT + SAMPLE QR
+     ===================================================================== -->
+<section class="page page--cta">
+
+  <header class="page__top">
+    <p class="page__eyebrow">Ready when you are</p>
+    <h2 class="page__heading"><em>Yes — let's begin.</em></h2>
+  </header>
+
+  <div class="cta-row">
+    <div class="cta-row__sample">
+      <p class="cta-row__label">See a real one first</p>
+      <h3>Look at a live wedding microsite</h3>
+      <p>This is what we built for a fictional couple — Aanya & Rohan, 14 February 2027 at the Taj Lake Palace, Udaipur. Scroll through the whole thing on your phone to see exactly how your guests will experience yours.</p>
+    </div>
+    <div class="cta-row__qr">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&format=svg&data=knotandink.netlify.app/samples/aanya-rohan/&color=7B2D26&bgcolor=FAF6EE"
+        alt="QR code to live sample"
+        width="140" height="140"
+        onerror="this.outerHTML='<div class=&quot;qr-fallback&quot;>QR code<br>knotandink.netlify.app/samples/aanya-rohan</div>'" />
+      <p>knotandink.netlify.app/samples/aanya-rohan</p>
+    </div>
+  </div>
+
+  <hr class="page__rule" />
+
+  <div class="confirm">
+    <h3 class="confirm__title">How to confirm</h3>
+    <div class="confirm-steps">
+      <div class="confirm-step">
+        <div class="confirm-step__num">01</div>
+        <p>WhatsApp us at <strong>+91 89569 29726</strong> with your chosen package and event date.</p>
+      </div>
+      <div class="confirm-step">
+        <div class="confirm-step__num">02</div>
+        <p>We send you a payment link for 50% of the package amount (UPI, Razorpay, or bank transfer — your call).</p>
+      </div>
+      <div class="confirm-step">
+        <div class="confirm-step__num">03</div>
+        <p>The moment payment lands, your slot is locked. We schedule the kickoff call within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="terms">
+    <h4>Payment terms</h4>
+    <ul>
+      <li><strong>50% upfront</strong> to confirm the slot · non-refundable once design begins</li>
+      <li><strong>50% on delivery</strong> · before your site moves to its final URL</li>
+      <li>Extra edit rounds beyond your package: <strong>₹500/round</strong></li>
+      <li>Custom illustrations (if added): <strong>+₹3,000</strong> single · <strong>+₹7,500</strong> suite · <strong>+₹12,000</strong> full bespoke</li>
+      <li>This proposal is valid until <strong>31 May 2026</strong> · prices honoured for projects confirmed before then</li>
+    </ul>
+  </div>
+
+  <div class="signoff">
+    <p class="signoff__script">with love,</p>
+    <p class="signoff__studio">Knot &amp; Ink</p>
+    <div class="signoff__contact">
+      <p><span>WhatsApp</span> +91 89569 29726</p>
+      <p><span>Instagram</span> @knotandink</p>
+      <p><span>Portfolio</span> knotandink.netlify.app</p>
+    </div>
+  </div>
+
+  <footer class="page__bottom page__bottom--dark">
+    <p class="page__bottom-script">Aanya &amp; Rohan · 14 February 2027</p>
+    <p>5 of 5 · A wedding microsite proposal · Knot &amp; Ink</p>
+  </footer>
+</section>
+
+</body>
+</html>
