@@ -407,7 +407,11 @@
       <p class="section__intro">Three questions, one minute. We'll reply on WhatsApp with package recommendations and 2-3 sample sites that match your style.</p>
     </header>
 
-    <form class="enquire-form" id="enquireForm" novalidate>
+    <form class="enquire-form" id="enquireForm" name="enquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="enquiry" />
+      <p class="enquire-form__hp" hidden>
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
       <div class="form-row form-row--two">
         <label class="field">
           <span class="field__label">Your name</span>

@@ -86,8 +86,21 @@
       var pkg      = (data.get('package') || '').toString().trim();
       var notes    = (data.get('notes')   || '').toString().trim();
 
+      // Lead capture: fire-and-forget POST to Netlify Forms so the
+      // enquiry lands in the dashboard + email even if the couple bails
+      // on the WhatsApp handoff (closed tab, no WhatsApp on desktop,
+      // didn't hit send). Netlify's build bot detects the form by the
+      // data-netlify="true" attribute at deploy time; this POST mirrors
+      // the body the static <form> would have submitted.
+      try {
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString()
+        }).catch(function () { /* swallow — WhatsApp handoff still works */ });
+      } catch (err) { /* older browsers without fetch — same fallback */ }
+
       // Build a tidy WhatsApp message Knot & Ink can act on immediately.
-      // Note: in production, also POST to Formspree / Google Form / backend.
       var lines = [
         'Hi Knot & Ink — wedding microsite enquiry from your website:',
         '',

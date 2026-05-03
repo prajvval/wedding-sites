@@ -21,12 +21,11 @@ the first partner DM / walk-in:
       (established Mumbai/London wedding photography studio, listed on
       the same marketplaces we plan to use). Global find-and-replace
       executed across all 13 files in the project.
-- [ ] **Rename the Netlify site subdomain.** The live URL is currently
-      `jodistudio.netlify.app` (claimed under the old name) but every
-      file now references `knotandink.netlify.app`. Until this is
-      renamed, the URL on every printed deck and the QR codes will
-      404. Fix: Netlify dashboard → Site config → Change site name →
-      `knotandink`. Then re-deploy the `deploy/` folder. Free, instant.
+- [x] **Rename the Netlify site subdomain.** ✅ Done 2026-05-03. Live
+      site now resolves at `knotandink.netlify.app`. Re-deploy the
+      `deploy/` folder if you haven't since the Eternal Memory Mode
+      changes — printed-deck QR codes will work either way (URL is
+      unchanged), but the live demo needs the latest bundle.
 - [x] **Lock the target city.** ✅ **Pune** is locked in (decided
       2026-05-03). Owner is physically based in Pune, so walk-ins to
       banquet halls and counter-card placements at jewellers (channels
@@ -197,10 +196,18 @@ the first partner DM / walk-in:
       `new Date()` vs the wedding date, hide countdown + RSVP, swap hero
       copy from "Save the date" to "Married on [date]", lead with the
       photo gallery. No backend needed.
-- [ ] **Landing page enquiry form** — currently submits to WhatsApp via
-      `wa.me`. For higher conversion, also POST to Formspree / Google
-      Form so enquiries land in inbox even if the couple bails before
-      hitting WhatsApp send.
+- [x] **Landing page enquiry form fallback** — ✅ Done 2026-05-04 via
+      **Netlify Forms** (chose this over Formspree because the site
+      already lives on Netlify — zero third-party signup, 100/mo free
+      tier, submissions in Netlify dashboard + email). Form has
+      `data-netlify="true"` + honeypot `bot-field` for spam protection.
+      JS fires a fire-and-forget `fetch('/', POST)` before the WhatsApp
+      handoff, so an enquiry is captured even if the couple closes the
+      tab before hitting WhatsApp send. **Activation:** form is only
+      live after a Netlify deploy of the updated `deploy/` bundle —
+      Netlify's build bot needs to scan the deployed HTML to register
+      the form. After re-deploy, check Forms tab in Netlify dashboard
+      to confirm `enquiry` appears.
 - [ ] Razorpay payment integration (needs registered business + PAN)
 - [ ] RSVP form backend (currently the sample form is UI only —
       production needs Formspree, Google Forms, or a tiny backend)
