@@ -27,23 +27,75 @@ the first partner DM / walk-in:
       renamed, the URL on every printed deck and the QR codes will
       404. Fix: Netlify dashboard → Site config → Change site name →
       `knotandink`. Then re-deploy the `deploy/` folder. Free, instant.
-- [ ] **Lock the target city.** `channels.md` week-1 plan needs a city to
-      build "50 planners + 30 photographers in [city]" prospect list.
-      Working canon is Bangalore. Tier 2 cities (Pune, Jaipur, Ahmedabad,
-      Lucknow, Kochi, Chandigarh) usually beat metros for first-time
-      vendors — less competition, higher DM response rates.
-- [ ] **Claim the Instagram handle `@knotandink`** (or whatever you
-      pick). Tier 1 channels #2 and #3 (cold-DM planners + photographers)
-      *are* Instagram. Cannot run them without an account that looks
-      live: profile photo, bio with WhatsApp + landing URL, 3-6 posts
-      (sample screenshots) so it doesn't read as a sock puppet.
-- [ ] **Build Eternal Memory Mode auto-transform JS** in
-      `samples/aanya-rohan/script.js`. It's the single biggest emotional
-      differentiator across both decks and the landing page. If a planner
-      inspects the sample and the post-wedding transform doesn't work,
-      the pitch falls apart. Either ship the `new Date()` conditional
-      swap, or add a visible "preview: post-wedding view" toggle so it
-      can be demoed without time-travelling.
+- [x] **Lock the target city.** ✅ **Pune** is locked in (decided
+      2026-05-03). Owner is physically based in Pune, so walk-ins to
+      banquet halls and counter-card placements at jewellers (channels
+      #4 and #5) are fully unlockable. Pune is also one of the
+      recommended Tier 2 cities in `channels.md` — less competition
+      than Bangalore/Mumbai, higher DM response rates.
+      Warm-intro asset: owner's mom's cousin runs **maangal.com** (a
+      Garhwali/Kumaoni matrimonial site, Dehradun-based, founded 2008).
+      Not a direct wedding-services partnership, but his **personal
+      network** in the broader wedding-adjacent industry is the real
+      asset — see "Owner network / warm intros" section below.
+- [ ] **Claim a working Instagram handle.** ⚠️ `@knotandink` is **TAKEN**
+      (verified 2026-05-03) by an active macrame & prints craft account
+      ("knot & ink | macrame and prints"). Not a competitor, but the
+      exact handle is unavailable.
+
+      **Codebase risk:** every customer-facing file currently links to
+      `instagram.com/knotandink`, which now points at a stranger's
+      account. Hand a printed deck to a planner today and they'll click
+      through to macrame photos. Either swap the references to a
+      claimed variant, OR strip the IG link entirely until claimed.
+
+      **Variants to try in order (pick first available):**
+      1. `@knotandink.studio` ⭐ recommended
+      2. `@knotandink.in`
+      3. `@knotandink.co`
+      4. `@knot.and.ink`
+      5. `@knotandinkstudio`
+
+      Once claimed, run a global find-and-replace from `knotandink` →
+      `<chosen-handle>` across landing/index.html, deploy/index.html,
+      partner-deck/deck.html, couple-deck/proposal.html, CONTEXT.md,
+      and TODO.md. Same playbook as the brand-name swap.
+
+      Why this is a hard blocker: Tier 1 channels #2 and #3 (cold-DM
+      planners + photographers) *are* Instagram. Cannot run them without
+      an account that looks live — profile photo, bio with WhatsApp +
+      landing URL, 3-6 posts (sample screenshots) so it doesn't read
+      as a sock puppet.
+- [x] **Build Eternal Memory Mode auto-transform JS.** ✅ Shipped
+      2026-05-03 in both `samples/aanya-rohan/` (source) and
+      `deploy/samples/aanya-rohan/` (deploy bundle).
+
+      **What was built:**
+      - `MEMORY_MODE_DATE` constant in `script.js` set to 15 Feb 2027
+        00:00 IST (= the day after Aanya & Rohan's wedding). On page
+        load, JS compares `new Date()` against this constant; if past,
+        adds `.is-post-wedding` class to `<body>`.
+      - CSS in `styles.css` hides countdown / RSVP / travel / FAQ /
+        floating CTA when `.is-post-wedding` is present, and swaps
+        between `.pre-wedding-only` / `.post-wedding-only` elements
+        (hero eyebrow, hero CTA, gallery memory note).
+      - Hero eyebrow swaps "Together with their families" →
+        "Forever, since". Hero CTA swaps "RSVP by 15 January" → "View
+        our wedding album" (anchor to gallery). Gallery memory note
+        swaps the upsell copy → "Thank you for celebrating with us"
+        with permanent-album framing.
+      - **Demo toggle** (bottom-left floating button) for showing both
+        modes to planners without time-travelling. Wrapped in HTML
+        comments marking it as DEMO-ONLY — for real client sites,
+        delete the toggle HTML in `index.html` AND the
+        `demoToggle` binding in `script.js`. The auto-transform
+        keeps working without it.
+
+      **To test:** open `samples/aanya-rohan/index.html` in a browser.
+      You should see the pre-wedding view by default. Click the gold
+      "DEMO · Preview post-wedding view" button bottom-left to flip.
+      Countdown / RSVP / travel / FAQ should disappear; gallery memory
+      note should change copy.
 
 ### Operational prep — afternoon of work, don't skip
 
@@ -56,6 +108,43 @@ the first partner DM / walk-in:
 - [ ] **Prospect list spreadsheet** — 50 planners + 30 photographers in
       target city, columns for Instagram handle, DM-sent date, reply
       status, follow-up date. Google Sheet is fine.
+
+### Owner network / warm intros — assets to leverage
+
+- [ ] **Mom's cousin (maangal.com) — make a TWO-TIER ask in one call.**
+      Family contact who runs maangal.com (Garhwali/Kumaoni matrimonial
+      site, est. 2008, ~16k profiles, Dehradun-based — see CONTEXT.md
+      for the full assessment + math). Maangal users are *future* Knot &
+      Ink customers — every successful match becomes an engaged couple
+      shopping for vendors within 6-18 months — so a partnership is
+      worth pursuing as a **parallel low-effort channel**, not a Tier 1
+      replacement for Pune planner/photographer outreach.
+
+      **Tier 1 ask — platform partnership** (lightweight):
+      "Could you add a small 'Recommended Wedding Invite Studio' link
+      or banner on maangal.com? I'll give you a tracking URL and pay
+      15% of any sale that closes through it." Realistic volume: 5-15
+      closures/year (~₹30-90k/year revenue). Implementation: cousin
+      pastes an HTML snippet, owner gives him a tracking URL.
+
+      **Tier 2 ask — personal network**:
+      "Separately, over 16 years running a wedding-adjacent site, you
+      must know planners, photographers, and venue managers across
+      Uttarakhand and possibly Maharashtra. Anyone you'd vouch for in
+      Pune?" One warm intro from him beats 30 cold DMs.
+
+      **Hard guardrails** (DPDP 2023):
+      - ❌ Never ask for or accept user data, profile exports, or
+        contact lists from his platform.
+      - ❌ Never cold-message maangal users yourself.
+      - ✅ A banner / link / opt-in newsletter mention from maangal
+        itself is fine — no data leaves their platform.
+      - ✅ One-on-one introductions where the couple opts into the
+        conversation are fine.
+
+      **What NOT to over-invest:** don't build a Garhwali/Kumaoni-
+      specific sample template just for this. Volume doesn't justify
+      the work. The existing samples are fine.
 
 ### Not blockers for outreach — but blockers for *closing*
 
@@ -145,10 +234,10 @@ with action context, listed here for the strategic/decision lens.
   or QR code is shown to a partner. Eventual custom domain target:
   `knotandink.in` (not yet registered, ~₹600-1500/yr at any Indian
   registrar).
-- **Target city** — working canon is **Bangalore**. Easy swap if owner
-  picks a different first-launch city. Tier 2 cities (Pune, Jaipur,
-  Ahmedabad, Lucknow, Kochi, Chandigarh) typically beat metros for
-  first-time vendors. Decision blocks the prospect list.
+- ~~**Target city**~~ ✅ **DECIDED 2026-05-03: Pune.** Owner is
+  physically based there. All canon-references updated across landing,
+  partner deck, sample microsite, and the deploy bundle. Demo couple
+  Aanya & Rohan repositioned as Pune-based for narrative consistency.
 - **Instagram handle** — `@knotandink` is placeholder, not yet claimed.
   Required to run cold-DM channels (planners, photographers).
 - **Whether to register a business entity now** or run as sole-prop

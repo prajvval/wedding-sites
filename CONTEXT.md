@@ -123,11 +123,60 @@ wedding-sites/
     would be broken), and a Gmail address looks unprofessional for the
     studio brand. WhatsApp-only is simpler and matches how Indian
     couples already prefer to talk to vendors.
-  - **Instagram** `@knotandink` (handle decided alongside the brand name
-    on 2026-05-03; not yet claimed on Instagram. Required before cold-DM
-    outreach to planners and photographers — see TODO.md outreach
-    readiness section).
-- Target city: Bangalore (still flexible).
+  - **Instagram — handle TBD.** `@knotandink` is taken (verified
+    2026-05-03 — active macrame & prints craft account, not a
+    wedding competitor). The codebase still references `@knotandink`
+    everywhere; this is a known issue and needs a global swap once
+    a variant is claimed. Variants to try in order: `@knotandink.studio`
+    (preferred), `@knotandink.in`, `@knotandink.co`, `@knot.and.ink`,
+    `@knotandinkstudio`. See TODO.md outreach-readiness section for
+    the full action item.
+- **Target city: Pune** (locked 2026-05-03). Owner is physically based in
+  Pune, which makes the in-person walk-in channels (banquet halls,
+  jewellers, bridal-wear) viable. Pune is also one of the recommended
+  Tier 2 cities in `channels.md` — less gatekeeping than Mumbai/Bangalore.
+- **Warm-intro asset: maangal.com (mom's cousin).** Owner's mom's cousin
+  runs maangal.com, a Garhwali/Kumaoni matrimonial matchmaking site
+  founded 2008, based in Dehradun, ~16k profiles, ~5 employees. Real
+  partnership opportunity, but smaller than it sounds.
+
+  **The funnel logic:** every successful maangal match becomes an
+  engaged couple within 6-18 months who needs wedding vendors. So
+  maangal users are *future* Knot & Ink customers, not current ones —
+  the question is how to reach them at the right moment without
+  violating their privacy.
+
+  **Realistic math:** 16k profiles lifetime → ~1.5-2.5k actively-
+  matching/year → ~150-300 marrying within 12 months → ~30-80 willing
+  to pay ₹6k+ for digital invites → **5-15 closures/year via this
+  channel** (~₹30-90k/year revenue). Useful but not a Tier 1 channel.
+  Don't reorganise strategy around it; treat it as a parallel low-
+  effort kicker to the Pune planner/photographer outreach.
+
+  **The two-tier ask (one call):**
+  1. *Platform partnership* — a banner, footer link, or "recommended
+     vendors" widget on maangal.com that points to Knot & Ink's
+     landing page with a tracking URL. Pay 15% commission on closed
+     sales, OR a flat monthly placement fee. No data ever leaves his
+     platform.
+  2. *Personal network* — warm intros to wedding planners, photographers,
+     and venue managers he's met in 16 years of running a wedding-
+     adjacent business. One vouched intro converts ~10x better than a
+     cold DM.
+
+  **DPDP 2023 hard rules — never violate:**
+  - ❌ Don't ask for or accept user data, profile exports, contact
+    lists, or "the engaged people from your platform."
+  - ❌ Don't cold-message maangal users.
+  - ✅ A banner placement, a tracking link, an opt-in newsletter
+    mention from maangal itself — all fine, no data leaves the platform.
+  - ✅ Direct introductions where the couple opts into the conversation
+    — fine.
+
+  **Don't over-invest:** building a Garhwali/Kumaoni-specific sample
+  template just for maangal is not justified at 5-15 closures/year.
+  The existing Aanya & Rohan sample (Pune-Udaipur, modern Indian) works
+  for this audience too.
 - **Mobile-first design.** Most guests open the URL on phone via
   WhatsApp. Desktop is secondary.
 - **No paid ads in month 1-3.** CPL for wedding services in India is

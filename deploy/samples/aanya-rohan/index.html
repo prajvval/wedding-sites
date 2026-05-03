@@ -10,6 +10,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FAF6EE'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' dy='.3em' fill='%237B2D26' font-family='Georgia,serif' font-size='20' font-style='italic'%3EA%26R%3C/text%3E%3C/svg%3E" />
+<script>
+  // Eternal Memory Mode — pre-paint check (FOUC prevention).
+  // Runs synchronously before <body> renders so .is-post-wedding is
+  // on <html> from the very first paint. Without this, slow-JS
+  // devices would briefly show the pre-wedding view before the main
+  // script.js transforms it. Full transform + toggle logic lives in
+  // script.js. KEEP THIS DATE IN SYNC with MEMORY_MODE_DATE there.
+  (function () {
+    var memoryMs = Date.UTC(2027, 1, 14, 18, 30, 0);
+    if (Date.now() >= memoryMs) document.documentElement.classList.add('is-post-wedding');
+  })();
+</script>
 </head>
 <body>
 
@@ -58,7 +70,8 @@
   </svg>
 
   <div class="hero__inner">
-    <p class="hero__eyebrow">Together with their families</p>
+    <p class="hero__eyebrow pre-wedding-only">Together with their families</p>
+    <p class="hero__eyebrow post-wedding-only" hidden>Forever, since</p>
     <h1 class="hero__names">
       <span class="hero__name">Aanya</span>
       <span class="hero__amp">&amp;</span>
@@ -71,7 +84,8 @@
     </div>
     <p class="hero__date">Sunday, the fourteenth of February<br>two thousand and twenty-seven</p>
     <p class="hero__venue">Taj Lake Palace · Udaipur</p>
-    <a href="#rsvp" class="btn btn--primary hero__cta">RSVP by 15 January</a>
+    <a href="#rsvp" class="btn btn--primary hero__cta pre-wedding-only">RSVP by 15 January</a>
+    <a href="#gallery" class="btn btn--primary hero__cta post-wedding-only" hidden>View our wedding album</a>
     <div class="hero__scroll" aria-hidden="true">
       <span>Scroll</span>
       <span class="hero__scroll-line"></span>
@@ -125,8 +139,8 @@
       </article>
 
       <article class="story__item">
-        <div class="story__photo story__photo--3" role="img" aria-label="Moving to Bangalore together">
-          <span class="photo-label">Replace · Bangalore home</span>
+        <div class="story__photo story__photo--3" role="img" aria-label="Moving to Pune together">
+          <span class="photo-label">Replace · Pune home</span>
         </div>
         <div class="story__copy">
           <p class="story__year">June 2024</p>
@@ -225,7 +239,7 @@
     <div class="gallery__grid">
       <div class="gallery__item gallery__item--tall photo-bg-1"><span class="photo-label">Replace · Engagement</span></div>
       <div class="gallery__item photo-bg-2"><span class="photo-label">Replace · Coorg</span></div>
-      <div class="gallery__item photo-bg-3"><span class="photo-label">Replace · Bangalore home</span></div>
+      <div class="gallery__item photo-bg-3"><span class="photo-label">Replace · Pune home</span></div>
       <div class="gallery__item gallery__item--wide photo-bg-4"><span class="photo-label">Replace · Hampi proposal</span></div>
       <div class="gallery__item photo-bg-5"><span class="photo-label">Replace · Family</span></div>
       <div class="gallery__item gallery__item--tall photo-bg-6"><span class="photo-label">Replace · Roka ceremony</span></div>
@@ -233,12 +247,19 @@
       <div class="gallery__item gallery__item--wide photo-bg-8"><span class="photo-label">Replace · Pre-wedding shoot</span></div>
     </div>
 
-    <p class="gallery__memory-note">
+    <p class="gallery__memory-note pre-wedding-only">
       <em>This page comes alive again after our wedding day.</em>
       Photos from the ceremony, the sangeet, the family moments — all
       added here by Knot &amp; Ink so this site lives on as our wedding
       album. <a href="https://knotandink.netlify.app">Eternal Memory Mode</a>
       is included with every Standard and Premium microsite.
+    </p>
+    <p class="gallery__memory-note post-wedding-only" hidden>
+      <em>Thank you for celebrating with us.</em>
+      These are the moments — the ones we'll keep returning to. New
+      photos are added by Knot &amp; Ink as our families share them.
+      This site is now our forever-album, and you are welcome to visit
+      whenever you'd like.
     </p>
   </div>
 </section>
@@ -349,7 +370,7 @@
         <div class="travel__block">
           <h3>Getting to Udaipur</h3>
           <ul class="travel__list">
-            <li><strong>By air:</strong> Maharana Pratap Airport (UDR), 24 km from venue. Direct flights from Mumbai, Delhi, Bangalore, Hyderabad.</li>
+            <li><strong>By air:</strong> Maharana Pratap Airport (UDR), 24 km from venue. Direct flights from Mumbai, Delhi, Pune, Hyderabad.</li>
             <li><strong>By train:</strong> Udaipur City station, 4 km from Lake Pichola jetty.</li>
             <li><strong>By road:</strong> 6 hrs from Ahmedabad, 9 hrs from Jaipur.</li>
           </ul>
@@ -428,7 +449,21 @@
   </div>
 </footer>
 
-<a href="#rsvp" class="floating-cta" aria-label="RSVP">RSVP</a>
+<a href="#rsvp" class="floating-cta pre-wedding-only" aria-label="RSVP">RSVP</a>
+
+<!-- ============================================================
+     DEMO TOGGLE — sample microsite only.
+     Lets a planner / prospective client preview the post-wedding
+     "Eternal Memory Mode" view without waiting for the wedding date.
+     For real client microsites, REMOVE this entire block AND the
+     matching demoToggle binding in script.js. The auto-transform
+     logic (driven by the wedding date in script.js) keeps working.
+     ============================================================ -->
+<button class="demo-toggle" id="demoToggle" type="button" aria-pressed="false">
+  <span class="demo-toggle__label">DEMO</span>
+  <span class="demo-toggle__text">Preview post-wedding view</span>
+</button>
+<!-- /DEMO TOGGLE -->
 
 <script src="script.js"></script>
 </body>
