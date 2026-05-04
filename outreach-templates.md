@@ -204,9 +204,161 @@ product feedback (signals you're investing in the partnership).
 
 ---
 
+## 8. Wedding planner / banquet hall / photographer — phone cold call
+
+**When to call**
+
+- **Best windows:** Tue-Wed-Thu, 11am-1pm or 4-6pm IST.
+- **Avoid:** Monday mornings (chaos), Friday afternoons (clocking out),
+  Saturday/Sunday (working at events).
+
+**Before you dial — 60-second pre-call checklist**
+
+- [ ] Prospect sheet open with the row for this contact selected.
+- [ ] Partner deck PDF on your phone, ready to WhatsApp in 10 seconds.
+- [ ] Sample link copied to clipboard:
+      `https://knotandink.netlify.app/samples/aanya-rohan/`
+- [ ] Pen + scratch pad for objections / callback times.
+- [ ] Voice — slightly slower than normal, no apology, no "umm sorry to
+      bother you." You're offering a partnership, not begging.
+
+**Opening (10 seconds — get permission)**
+
+> Namaste, am I speaking with {{name}}? I'm {{your_name}} from Knot &
+> Ink, a new wedding microsite studio in Pune. Got 30 seconds for a
+> quick partnership idea? I'll keep it short.
+
+If they say "in a meeting" / "busy" — apologise + ask "what time tomorrow
+works? 11am or 4pm?" Lock the callback. Hang up.
+
+**Pitch (30 seconds — value + commission)**
+
+> Thanks. We build digital wedding invites — a small website couples
+> share on WhatsApp instead of printing cards. Story, full schedule,
+> RSVP, gallery, all in one link. Three packages: ₹3,000, ₹6,000,
+> ₹10,000.
+>
+> The reason I'm calling: **we pay 15% commission on every couple who
+> closes through your referral.** Most of your couples are deciding on
+> invites in the same window they're talking to you.
+
+**The ask (5 seconds — specific, low-friction)**
+
+> Could I drop by {{venue / studio / location}} for 5 minutes this
+> week to leave a one-page deck? Tuesday or Thursday — what suits you?
+
+**If they agree to a meeting** — close, then send WhatsApp Template A:
+
+> Great. I'll send the one-pager and sample link to {{this number}}
+> now, and {{drop by Tuesday at 11am / call you back Friday at 4pm}}.
+> Save my number — {{your_name}}, Knot & Ink. Talk soon.
+
+---
+
+### Objection handlers — keep each under 2 sentences
+
+Each handler ends with a fresh small ask, never a defence.
+
+**"We already have someone for digital invites."**
+> Got it — most planners do. Does theirs auto-transform into a wedding
+> photo album the day after the wedding? That's our differentiator.
+> Worth a 5-min comparison?
+
+**"Couples don't ask us about this."**
+> Fair — they're starting to. Most of our enquiries say "a friend's
+> wedding had this and I wanted one." The first {{planners /
+> photographers / halls}} in Pune to offer it gets every referral for
+> 12 months. Want to be in that group?
+
+**"Send me the details on WhatsApp."**
+> Will do — same number as this one? I'll send a one-pager + sample
+> link in 5 minutes. When can I follow up — Friday or Monday?
+
+**"What's the commission?"**
+> 15% flat — ₹450 on Basic, ₹900 on Standard, ₹1,500 on Premium. Paid
+> within 7 days of the couple's full payment. Tracked through a unique
+> link, no manual claim.
+
+**"Are you new?"**
+> Yes — brand new in Pune, but the studio, samples, and process are
+> built and ready. Happy to walk you through a live sample so you can
+> judge for yourself. No risk — you only earn when we close.
+
+**"What if a couple complains about you?"**
+> Two protections: you only refer, you don't endorse — couples sign
+> directly with us. And we offer a written delivery commitment with
+> refund clauses. If we mess up, the couple gets refunded — your
+> reputation stays clean either way.
+
+**"I don't have time."**
+> Totally fair. Last ask — can I WhatsApp you the one-pager and sample
+> link? 90 seconds to scan. If interesting, you tell me when. If not,
+> no follow-up. Best WhatsApp number?
+
+**Why this works:** asks permission upfront ("got 30 seconds?") —
+neutralises the "another sales call" reflex. Names the 15% commission
+early, before objections form. Every objection handler hands the
+conversation back with a fresh small ask, never a defence. Specific
+times offered (Tue / Thu, 11am / 4pm) — abstract availability is harder
+to commit to than concrete options.
+
+---
+
+## 9. WhatsApp follow-ups after a cold call
+
+These are timed sequences. **Send Template A within 10 minutes of
+hanging up** — the window where the partner still remembers your voice.
+
+**Template A — immediately after the call** (when they said "send details"):
+
+> Namaste {{name}} — {{your_name}} from Knot & Ink, just spoke now.
+>
+> Attaching:
+> • 1-page partner deck (PDF) — *attach `Knot & Ink — Partner Deck.pdf`*
+> • Live sample microsite: https://knotandink.netlify.app/samples/aanya-rohan/
+> • Pricing: ₹3,000 / ₹6,000 / ₹10,000 — partner commission 15% flat
+>
+> Take 2 min to scan when free. {{Drop by Tuesday at 11am / Call you
+> Friday at 4pm}} as discussed.
+>
+> Knot & Ink
+> https://knotandink.netlify.app
+
+**Template B — 24-48 hour nudge** (if silence):
+
+> Hi {{name}} — quick check-in on the Knot & Ink deck I shared
+> {{yesterday / on Tuesday}}. No rush.
+>
+> Two questions:
+> 1. Did the sample link open OK on your phone?
+> 2. Worth a 10-min in-person catch-up this week, or should I circle
+>    back next month?
+>
+> Either answer is fine.
+
+**Template C — 5-day closeout** (if still silence):
+
+> Hi {{name}} — last note on the Knot & Ink referral partnership. All
+> good if it's not the right fit right now.
+>
+> If you ever do have a couple asking about digital wedding invites,
+> here's the link to share — partner commission is automatic when they
+> mention you: https://knotandink.netlify.app
+>
+> Wishing you a great wedding season.
+
+**Why this sequence works:** Template A anchors the call ("just spoke
+now") + closes the loop with the agreed callback. Template B uses two
+yes/no questions, easier to reply to than open-ended "are you
+interested?" Template C is a graceful exit — doesn't burn the bridge,
+sets up a year-from-now reactivation channel. **Stop after C.** A
+fourth message moves you from "follow-up" to "pestering."
+
+---
+
 ## What to track
 
-For every partner DM/walk-in, log in a simple Google Sheet:
+For every partner DM / call / walk-in, log in a simple Google Sheet:
 
 | Date | Channel | Partner name | City | First contact | Replied? | Referrals sent | Closed | Commission paid |
 
