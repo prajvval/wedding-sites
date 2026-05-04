@@ -1,0 +1,18 @@
+# Netlify build configuration — Knot & Ink
+#
+# Why this file: the wedding-sites repo holds source folders (landing/,
+# samples/, partner-deck/, couple-deck/) AND a deploy/ folder that mirrors
+# them in the exact structure that ships to production. Only deploy/ is
+# meant to be published — the rest are working files. This config tells
+# Netlify to publish from deploy/ on every git push to main.
+#
+# No build step: pure static HTML/CSS/JS, nothing to compile.
+
+[build]
+  publish = "deploy"
+  # No build command — static site, files are published as-is from deploy/.
+
+# Forms: Netlify auto-detects forms with the data-netlify="true" attribute
+# at deploy time. The enquiry form on landing/index.html (mirrored to
+# deploy/index.html) is registered as form-name="enquiry". Submissions
+# appear in Site → Forms in the Netlify dashboard.
