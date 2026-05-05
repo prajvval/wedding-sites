@@ -1019,6 +1019,62 @@ a:hover { color: var(--burgundy-deep); }
   padding: var(--pad-section) 0;
   background: var(--cream-warm);
 }
+
+/* Direct-WhatsApp shortcut — sits above the form for couples who'd rather
+   skip the questionnaire and start a chat. WhatsApp green (#25D366) is
+   universally recognised on the channel; the colour break from the
+   burgundy/cream brand palette is intentional — it signals "different
+   path" rather than another brand button. */
+.enquire-direct {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.enquire-direct__note {
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  margin: 0.7rem 0 0;
+  font-style: italic;
+}
+.btn--whatsapp {
+  background: #25D366;
+  color: white;
+  border-color: #25D366;
+  box-shadow: var(--shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.btn--whatsapp:hover {
+  background: #128C7E;
+  border-color: #128C7E;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn__wa-icon { flex-shrink: 0; }
+
+/* "or fill the form below" divider line + label */
+.enquire-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+.enquire-divider::before,
+.enquire-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.enquire-divider span {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .enquire-form {
   background: white;
   border-radius: var(--radius-lg);
